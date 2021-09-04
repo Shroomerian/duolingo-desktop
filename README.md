@@ -28,7 +28,7 @@ For other distributions, you will have to check if someone included this package
 
 If you've installed it through your package manager, then it should already contain a launcher for it. Otherwise, run the `duolingo-desktop` binary.
 
-# Building from source
+# Building from source (Linux)
 
 You will need to install [npm](https://www.npmjs.com/), the Node.js package manager.
 
@@ -36,4 +36,16 @@ In the main directory of this repository run the following:
 ```
 npm install
 npm run build
+```
+
+# Building from source (Windows)
+
+You will need to install both npm and [electron](https://www.electronjs.org/), specifically electron-builder.
+
+Afterwards run the following in the main directory of this repository:
+
+```
+npm install
+./node_modules/.bin/electron-builder --win
+
 ```
